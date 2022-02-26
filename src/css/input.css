@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind screens;
+
+.Card {
+  @apply w-60  h-64 shadow-xl rounded-lg flex-shrink-0 transition duration-100 transform hover:-translate-y-1;
+}
+.Card:nth-child(2n - 1) {
+  @apply bg-secondary text-white dark:bg-gray-600;
+}
+.Card:nth-child(2n) {
+  @apply bg-white text-terciary dark:bg-gray-800 dark:text-white;
+}
+.Card-image {
+  @apply w-full h-3/5 bg-cover rounded-t-lg;
+}
+.Card-content {
+  @apply w-full h-2/5 px-2 pt-4 rounded-b-lg;
+}
+.Card-title {
+  @apply text-lg font-bold;
+}
